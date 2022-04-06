@@ -48,6 +48,13 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
+                <div class="col-sm-3 order-sm-last align-self-center">
+                            <!-- <button type="submit" class="btn col-sm-8 btn-warning">
+                                Reserve Table
+                            </button> -->
+                            <a type="submit" href="#reservetable" class="btn btn-warning px-5">Reserve Table</a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -62,12 +69,12 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                             src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span> </h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                             Italian pizza, topped with Cerignola olives, ripe vine
                             cherry tomatoes, Vidalia onion, Guntur chillies and
                             Buffalo Paneer.</p>
-                            <!-- mr mt ml are margin right top and left -->
+                            <!-- mr mt ml are margin right top and left to the image i.e like padding around images-->
                     </div>
                 </div>
             </div>
@@ -79,8 +86,14 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media order-sm-last">
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" 
+                    src="img/buffet.png" alt="Buffet">
+                    <div class="media-body order-sm-first">
+                    <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -104,7 +117,67 @@
                 </div>
             </div>
         </div>
+
+
+
+    <!-- <div class="row row-content" id="reservetable">
+        <div class="col-sm-2"></div>
+        <div class="col-12 col-sm">
+            <form>
+                <div class="form-group row bg-warning p-2">
+                    <h3>Reserve a Table</h3>
+                </div>
+                <div class="form-group row">
+                    <label for="guestNumber" class="col-form-label col-5 col-sm-3">Number of Guests</label>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="1"> 1 &nbsp;</p>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="2"> 2 &nbsp;</p>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="3"> 3 &nbsp;</p>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="4"> 4 &nbsp;</p>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="5"> 5 &nbsp;</p>
+                    <p><input type="radio" name="guestNumber" id="guestNumber" value="6"> 6 &nbsp;</p>
+                </div>
+                <div class="form-group row">
+                    <label for="datetime" class="col-form-label col-4 col-md-3">Date and Time</label>
+                    <input type="date" class="form-control col-4 my-1 mx-1" id="datetime" name="date" placeholder="Choose Date">
+                    <input type="time" class="form-control col-3 my-1" id="datetime" name="time" placeholder="Choose Time">
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 offset-sm-3 offset-lg-2 col-md-12">
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
     </div>
+    </div>
+ -->
+    <div class="col container padding mt-5 mb-5"  id="reservetable">
+                <div class="card col-sm-8 offset-sm-2">
+                    <h3 class="float-left card-header bg-warning text-white mr-0 ml-0 mt-3">Reserve a Table</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <label for="guestNumber" class="col-form-label col-5 col-md-2 align-self-center mr-3">Number of Guests</label>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="1"> 1 &nbsp;</p>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="2"> 2 &nbsp;</p>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="3"> 3 &nbsp;</p>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="4"> 4 &nbsp;</p>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="5"> 5 &nbsp;</p>
+                            <p><input type="radio" class=" align-self-center mt-1" name="guestNumber" id="guestNumber" value="6"> 6 &nbsp;</p>
+                        </dl>
+                        <dl class="row">
+                            <label for="bookingDate" class="col-form-label col-sm-2">Date and Time</label>
+                            <input type="date" class="form-control col-4 col-sm-3 align-self-center ml-3 mr-3" id="datetime" name="date" placeholder="Choose Date">
+                            <input type="time" class="form-control col-3 my-1 align-self-center" id="datetime" name="time" placeholder="Choose Time">
+                        </dl>
+                        <div class="form-group row">
+                            <div class="col-12 offset-sm-3 offset-lg-2 col-md-12 float-left-2">
+                                <button type="submit" class="btn btn-primary float-left">Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <footer class="footer">
         <div class="container">
